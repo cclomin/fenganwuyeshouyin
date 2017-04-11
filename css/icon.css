@@ -1,0 +1,43 @@
+.form-icon{background:url(../images/form-icon.png)  no-repeat;background-size:56px 25px; display: inline-block;}
+.phone{height:25px;width:15px;background-position:0 0;}
+.pwd{height:25px;width:20px;background-position:-15px 0;}
+.verify{height:23px;width:21px;background-position:-36px 0;}
+
+.jiaofei-icon{background:url(../images/jiaofei-icon.png)  no-repeat;background-size:400px 40px; display: inline-block;}
+/*.jiaofei-icon{background:url(../images/jiaofei-icon.png)  no-repeat;background-size:400px 40px}*/
+.tingchefei-1{height:40px;width:40px;background-position:0 0;}
+.shuifei-2{height:40px;width:40px;background-position:-40px 0;}
+.tingchefei-2{height:40px;width:40px;background-position:-80px 0;}
+.wuyefei-2{height:40px;width:40px;background-position:-120px 0;}
+.wuyefei-1{height:40px;width:40px;background-position:-160px 0;}
+.diaofei-2{height:40px;width:40px;background-position:-200px 0;}
+.dianfei-1{height:40px;width:40px;background-position:-240px 0;}
+.ranqifei-1{height:40px;width:40px;background-position:-280px 0;}
+.shuifei-1{height:40px;width:40px;background-position:-320px 0;}
+.ranqifei-2{height:40px;width:40px;background-position:-360px 0;}
+
+/*.small-icon{background:url(../images/small-icon.png)  no-repeat;background-size:110px 23px; display: inline-block;}*/
+.small-icon{background:url(../images/small-icon.png)  no-repeat;background-size:114px 19px; display: inline-block;}
+.back{height:18px;width:9px;background-position:0px 0;}
+.local{height:16px;width:14px;background-position:-12px 0;}
+.more{height: 7px;width: 15px; background-position: -27px 0;}
+.do{height:19px;width:19px;background-position:-45px 0;}
+.doed{height:19px;width:20px;background-position:-69px 0;}
+.edit{height:19px;width:19px;background-position:-94px 0;}
+
+.dispos-icon{background:url(../images/dispos-icon.png)  no-repeat;background-size:78px 19px; display: inline-block; vertical-align: middle; margin-right: 5px;}
+.undispose-1{height:17px;width:17px;background-position:0 0;}
+.undispose-2{height:17px;width:17px;background-position:-19px 0;}
+.dispose-1{height:19px;width:19px;background-position:-38px 0;}
+.dispose-2{height:19px;width:19px;background-position:-59px 0;}
+
+
+.nav-icon{background:url(../images/nav-icon.png)  no-repeat;background-size:190px 23px; display: inline-block;}
+.tongxunlu-1{height:22px;width:21px;background-position:0 0;}
+.tongxunlu-2{height:22px;width:21px;background-position:-20px 0;}
+.chaxun-1{height:23px;width:24px;background-position:-42px 0;}
+.chaxun-2{height:23px;width:24px;background-position:-66px 0;}
+.xiaoxi-2{height:23px;width:25px;background-position:-90px 0;}
+.xiaoxi-1{height:23px;width:25px;background-position:-114px 0;}
+.index-1{height:23px;width:25px;background-position:-140px 0;}
+.index-2{height:23px;width:25px;background-position:-165px 0;}

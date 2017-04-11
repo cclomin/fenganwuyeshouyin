@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>一键缴费</title>
+		<link rel="stylesheet" href="css/weui.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icon.css" />
+		<script src="//cdn.bootcss.com/jquery/2.2.0/jquery.js"></script>
+	</head>
+	<body>
+		<div class="wrapper wrap flex flex-v">
+			<header class="weui-flex">
+				<div class="weui-flex__item">
+					<a href="javascript:window.history.back()" class="to-back">
+						<i class="small-icon back"></i>
+					</a>
+				</div>
+				<div class="weui-flex__item pro-name">安保部</div>
+				<div class="weui-flex__item"></div>
+			</header>
+		    <div class="main flex-1">
+		    	<div class="weui-search-bar" id="searchBar">
+		            <form class="weui-search-bar__form">
+		                <div class="weui-search-bar__box">
+		                    <i class="weui-icon-search"></i>
+		                    <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="请输入您的手机号、业主" required="">
+		                    <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+		                </div>
+		                <label class="weui-search-bar__label" id="searchText">
+		                    <i class="weui-icon-search"></i>
+		                    <span>搜索</span>
+		                </label>
+		            </form>
+		            <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+		        </div>
+		        <div class="weui-cells friend-hd" style="margin-top: 0;">
+		    		<a href="javascript:;" class="weui-cell">
+		    			<div class="weui-cell__bd">
+		    				<p>张三</p>
+		    			</div>
+		    			<div class="weui-cell__ft"></div>
+		    		</a>
+		    		<a href="javascript:;" class="weui-cell">
+		    			<div class="weui-cell__bd">
+		    				<p>李四</p>
+		    			</div>
+		    			<div class="weui-cell__ft"></div>
+		    		</a>
+		    		<a href="javascript:;" class="weui-cell">
+		    			<div class="weui-cell__bd">
+		    				<p>王五</p>
+		    			</div>
+		    			<div class="weui-cell__ft"></div>
+		    		</a>
+		    		<a href="javascript:;" class="weui-cell">
+		    			<div class="weui-cell__bd">
+		    				<p>赵柳</p>
+		    			</div>
+		    			<div class="weui-cell__ft"></div>
+		    		</a>
+		    	</div>
+		    </div>
+			<footer class="weui-flex">
+				<a href="jiaofei.html" class="weui-flex__item">
+					<i class="nav-icon index-1"></i>
+					<p>首页</p>
+				</a>
+				<a href="chazhaoyezhu.html" class="weui-flex__item">
+					<i class="nav-icon chaxun-1"></i>
+					<p>查询业主</p>
+				</a>
+				<a href="message.html" class="weui-flex__item">
+					<i class="nav-icon xiaoxi-1">
+					</i>
+					<p>消息</p>
+				</a>
+				<a href="friend.html" class="weui-flex__item active">
+					<i class="nav-icon tongxunlu-2"></i>
+					<p>通讯录</p>
+				</a>
+			</footer>
+		</div>
+		<script>
+		    $(function(){
+		        var $searchBar = $('#searchBar'),
+		            $searchResult = $('#searchResult'),
+		            $searchText = $('#searchText'),
+		            $searchInput = $('#searchInput'),
+		            $searchClear = $('#searchClear'),
+		            $searchCancel = $('#searchCancel');
+		
+		        function hideSearchResult(){
+		            $searchResult.hide();
+		            $searchInput.val('');
+		        }
+		        function cancelSearch(){
+		            hideSearchResult();
+		            $searchBar.removeClass('weui-search-bar_focusing');
+		            $searchText.show();
+		        }
+		
+		        $searchText.on('click', function(){
+		            $searchBar.addClass('weui-search-bar_focusing');
+		            $searchInput.focus();
+		        });
+		        $searchInput
+		            .on('blur', function () {
+		                if(!this.value.length) cancelSearch();
+		            })
+		            .on('input', function(){
+		                if(this.value.length) {
+		                    $searchResult.show();
+		                } else {
+		                    $searchResult.hide();
+		                }
+		            })
+		        ;
+		        $searchClear.on('click', function(){
+		            hideSearchResult();
+		            $searchInput.focus();
+		        });
+		        $searchCancel.on('click', function(){
+		            cancelSearch();
+		            $searchInput.blur();
+		        });
+		    });
+		</script>
+	</body>
+</html>
